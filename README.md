@@ -15,8 +15,8 @@ Responsive musician website for the **Mike Almas Band**.
 ### Features:
 * Bandcamp embedded music player integration
 * Bandsintown event widget integration
-* photo gallery
+* CSS based photo gallery
 
 
 
-#### Link to website [Band Webpage](https://cisco.com/)
+#### Link to website [Band Webpage](https://www.mikealmasband.live/)
