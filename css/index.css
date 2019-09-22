@@ -42,7 +42,7 @@ nav {
 }
 
 header li {
-    display: inline-block;
+    display: block;
     margin: 3px;
     font-weight: bold;
 }
@@ -336,6 +336,10 @@ footer p {
 /**********for tablets 600px - 899px (portrait) **********/
 
 @media screen and (min-width: 600px)  {
+    header li {
+        display: inline-block;
+    }
+    
     #branding {
         margin: 11px 0;
     }

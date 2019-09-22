@@ -1,0 +1,129 @@
+:root {
+    --primary-color: rgb(243, 237, 199);
+    --secondary-color: rgb(32, 56, 74);
+    --tertiary-color: rgb(213, 170, 86);
+    --accent-color-1: rgb(195, 59, 54);
+    --accent-color-2: rgb(255, 255, 255);
+    --accent-color-3: rgb(221, 217, 187);
+    --footer-bg-color: rgb(221, 221, 221);
+    --footer-color: rgb(136, 136, 136);
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(243, 237, 199); /*fallback for IE and EDGE*/
+    background-color: var(--primary-color);
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header - logo-header and navbar */
+header {
+    overflow: hidden;
+}
+
+#logo-header {
+    float: left;
+}
+
+#logo-header img {
+    display: block;
+    padding: 10px 20px;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+li a {
+    display: block;
+    color: rgb(32, 56, 74); /*fallback for IE and EDGE*/
+    color: var(--secondary-color);
+    padding: 27px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li a:hover {
+    color: rgb(213, 170, 86); /*fallback for IE and EDGE*/
+    color: var(--tertiary-color);
+}
+
+.current a {
+    color: rgb(195, 59, 54); /*fallback for IE and EDGE*/
+    color: var(--accent-color-1);
+}
+
+/* showcase image section */
+#showcase {
+    background-color: rgb(32, 56, 74); /*fallback for IE and EDGE*/
+    background-color: var(--secondary-color);
+}
+
+#showcase img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+/* ############################################  MEDIA QUERIES  ########################################################################### */
+
+@media screen and (max-width: 899px)  {
+
+    #logo-header {
+        border-bottom: 1px solid rgb(136, 136, 136); /*fallback for IE and EDGE*/
+        border-bottom: 1px solid var(--footer-color);
+    }
+
+    #logo-header, ul, li {
+        float: none;
+    }
+
+    #logo-header img {
+        margin: 0 auto;
+    }
+
+    li a {
+        padding: 8px 0;
+        font-size: 14px;
+        background-color: rgb(221, 217, 187); /*fallback for IE and EDGE*/
+        background-color: var(--accent-color-3);
+        border-bottom: 1px solid rgb(136, 136, 136); /*fallback for IE and EDGE*/
+        border-bottom: 1px solid var(--footer-color);
+    }
+
+    .container {
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 499px)  {
+
+    #logo-header img {
+        width: 250px;
+    }
+}
