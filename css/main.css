@@ -15,12 +15,12 @@ body {
     background-color: var(--primary-color);
 }
 
-li a, #band {
+li a, #band, #middle-bio, #bottom-bio {
     color: rgb(32, 56, 74); /*fallback for IE and EDGE*/
     color: var(--secondary-color);
 }
 
-li a:hover {
+li a:hover, #top-bio {
     color: rgb(227, 197, 103); 
     color: var(--tertiary-color);
 }
@@ -30,12 +30,12 @@ li a:hover {
     color: var(--accent-color-1);
 }
 
-#showcase {
+#showcase, #top-bio {
     background-color: rgb(32, 56, 74); /*fallback for IE and EDGE*/
     background-color: var(--secondary-color);
 }
 
-#band {
+#band, #middle-bio {
     background-color: rgb(227, 197, 103); /*fallback for IE and EDGE*/
     background-color: var(--tertiary-color);
 }
@@ -186,12 +186,12 @@ li a {
 }
 
 .icon-1 {
-    width: 70px;
+    width: 50px;
     padding: 10px;
 }
 
 .icon-2 {
-    width: 64px;
+    width: 44px;
     padding: 10px;
 }
 
@@ -206,54 +206,195 @@ footer p {
 }
 
 /* band page bios */
-.h3-styling {
-    padding: 10px 0 30px 0;
-}
-
-.p-styling {
-    text-align: justify;
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-.bio-text-styling {
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-/* mike's bio section */
-#top-bio {
-    background-color: rgb(32, 56, 74);
-    color: rgb(227, 197, 103);
-    padding: 30px 0;
+#top-bio, #middle-bio, #bottom-bio {
+    padding: 50px 0;
 }
 
 .portrait-img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 0 0 20px 0;
-}
-
-/* steve's bio section */
-#middle-bio {
-    background-color: rgb(227, 197, 103);
-    color: rgb(32, 56, 74);
-    padding: 30px 0;
+    padding: 0 0 40px 0;
 }
 
 .landscape-img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 0 0 20px 0;
+    padding: 0 0 40px 0;
 }
 
-/* cam's bio section */
-#bottom-bio {
-    color: rgb(32, 56, 74);
-    padding: 30px 0;
+.p-styling {
+    max-width: 800px;
+    text-align: justify;
+    margin: 0 auto;
 }
+
+.bio-text-styling, .p-styling {
+    font-size: 19px;
+} 
+
+.h2-styling {
+    margin: 0;
+    font-size: 36px;
+}
+
+.h3-styling {
+    font-size: 22px;
+    margin: 0;
+    padding: 10px 0 30px 0;
+}
+
+.bio-text-styling {
+    line-height: 1.5;
+} 
+
+/* shows page */
+#show-page {
+    background-color: rgb(32, 56, 74);
+    min-height: 100vh;
+}
+
+#show-page h2 {
+    color: rgb(255, 255, 255);
+    padding: 80px 0;
+    text-align: center;
+    font-size: 36px;
+}
+
+
+
+
+
+
+
+/* media page */
+#audio {
+    background-color: rgb(227, 197, 103);
+}
+
+#bandcamp-widget-lg {
+    display: block;
+    padding: 40px 0;
+    margin: 0 auto;
+    border: 0;
+    /* width: 240px;
+    height: 820px; */
+
+    width: 400px;
+    height: 950px;
+
+}
+
+/* gallery */
+#gallery {
+    background-color: rgb(32, 56, 74);
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.img-select {
+    border: 1px solid rgb(32, 56, 74);
+}
+
+.img-select:hover {
+    border: 1px solid #fff;
+}
+
+#gallery h2 {
+    color: rgb(227, 197, 103);
+    margin-top: 40px;
+    text-align: center;
+}
+
+#gallery p {
+    color: rgb(227, 197, 103);
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* videos */
+#audio h2, #videos h2 {
+    color: rgb(32, 56, 74);
+    margin-top: 40px;
+    text-align: center;
+}
+
+#videos h2 {
+    margin-bottom: 40px;
+}
+
+/* columns */
+.column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#videos {
+    text-align: center;
+}
+
+.video-styling {
+    padding: 10px;
+    /* width: 280px;
+    height: 158px; */
+
+    width: 500px;
+    height: 281px;
+
+}
+
+#videos h3 {
+    color: rgb(32, 56, 74);
+    padding: 0 0 30px 0;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+/* #videos h3 {
+    color: rgb(32, 56, 74);
+    padding: 0 0 30px 0;
+    max-width: 280px;
+    margin: auto;
+} */
+
+
+
+
+
+/* larger screens */
+/* #bandcamp-widget-lg {
+    width: 400px;
+    height: 950px;
+} */
+
+/* .video-styling {
+    width: 500px;
+    height: 281px;
+} */
+
+/* #videos h3 {
+    color: rgb(32, 56, 74);
+    padding: 0 0 30px 0;
+    max-width: 500px;
+    margin: auto;
+} */
+
 
 /* ############################################  MEDIA QUERIES  ########################################################################### */
 
@@ -283,7 +424,11 @@ footer p {
 
     .container {
         width: 100%;
-    }   
+    }  
+    
+    #dates h2 {
+        font-size: 24px;
+    }
 /* about the band */
     #section-header img {
         width: 36px;
@@ -293,6 +438,42 @@ footer p {
     #band {
         font-size: 1rem;
     }
+
+/* band page bios */
+    #top-bio, #middle-bio, #bottom-bio {
+        padding: 30px 0;
+    }
+
+    .h2-styling {
+        font-size: 24px;
+    }
+
+    .h3-styling {
+        font-size: 18px;
+    }
+
+    .p-styling {
+        max-width: 550px; 
+        padding: 0 30px;
+    }
+    
+    .bio-text-styling {
+        font-size: 14px;
+    }
+
+    .portrait-img {
+        padding: 0 0 20px 0;
+    }
+    
+    .landscape-img {
+        padding: 0 0 20px 0;
+    }
+    
+/* show page */
+    #show-page h2 {
+        font-size: 24px;
+    }
+
 }
 
 @media screen and (max-width: 768px)  {
