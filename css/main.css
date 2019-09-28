@@ -1,53 +1,38 @@
-:root {
-    --primary-color: rgb(243, 237, 199);
-    --secondary-color: rgb(32, 56, 74);
-    --tertiary-color: rgb(227, 197, 103);
-    --accent-color-1: rgb(195, 59, 54);
-    --accent-color-2: rgb(255, 255, 255);
-    --accent-color-3: rgb(221, 217, 187);
-    --footer-bg-color: rgb(221, 221, 221);
-    --footer-color: rgb(136, 136, 136);
-}
-
 /* ############################## Colors ################################## */
 body {
-    background-color: rgb(243, 237, 199); /*fallback for IE and EDGE*/
-    background-color: var(--primary-color);
+    background-color: rgb(243, 237, 199);
 }
 
-li a, #band, #middle-bio, #bottom-bio {
-    color: rgb(32, 56, 74); /*fallback for IE and EDGE*/
-    color: var(--secondary-color);
+li a, #band, #middle-bio, #bottom-bio, .img-select, #audio h2, #videos h2, #videos h3 {
+    color: rgb(32, 56, 74);
 }
 
-li a:hover, #top-bio {
+#showcase, #top-bio, #show-page, #gallery {
+    background-color: rgb(32, 56, 74);
+}
+
+li a:hover, #top-bio, #gallery h2, #gallery p {
     color: rgb(227, 197, 103); 
-    color: var(--tertiary-color);
 }
 
-.current a {
-    color: rgb(195, 59, 54); /*fallback for IE and EDGE*/
-    color: var(--accent-color-1);
+#band, #middle-bio, #audio {
+    background-color: rgb(227, 197, 103);
 }
 
-#showcase, #top-bio {
-    background-color: rgb(32, 56, 74); /*fallback for IE and EDGE*/
-    background-color: var(--secondary-color);
-}
-
-#band, #middle-bio {
-    background-color: rgb(227, 197, 103); /*fallback for IE and EDGE*/
-    background-color: var(--tertiary-color);
+.current a, #dates h2 {
+    color: rgb(195, 59, 54);
 }
 
 #social, footer {
-    background-color: rgb(221, 221, 221); /*fallback for IE and EDGE*/
-    background-color: var(--footer-bg-color);
+    background-color: rgb(221, 221, 221);
 }
 
 footer {
     color: rgb(136, 136, 136);
-    color: var(--footer-color);
+}
+
+#show-page h2, .img-select:hover {
+    color: rgb(255, 255, 255);
 }
 /* ############################## end Colours ################################## */
 
@@ -157,9 +142,9 @@ li a {
 
 /* upcoming shows */
 #dates h2 {
-    color: #c33b36;
+    font-size: 36px;
     text-align: center;
-    margin: 30px 0 30px 0;
+    margin: 40px 0 30px 0;
 }
 
 .bit-widget-container {
@@ -202,6 +187,7 @@ footer {
 }
 
 footer p {
+    font-size: 10px;
     margin: 20px 0;
 }
 
@@ -210,14 +196,7 @@ footer p {
     padding: 50px 0;
 }
 
-.portrait-img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    padding: 0 0 40px 0;
-}
-
-.landscape-img {
+.portrait-img, .landscape-img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
@@ -251,13 +230,12 @@ footer p {
 
 /* shows page */
 #show-page {
-    background-color: rgb(32, 56, 74);
     min-height: 100vh;
 }
 
 #show-page h2 {
-    color: rgb(255, 255, 255);
     padding: 80px 0;
+    margin: 0;
     text-align: center;
     font-size: 36px;
 }
@@ -269,73 +247,32 @@ footer p {
 
 
 /* media page */
-#audio {
-    background-color: rgb(227, 197, 103);
-}
-
 #bandcamp-widget-lg {
     display: block;
     padding: 40px 0;
     margin: 0 auto;
     border: 0;
-    /* width: 240px;
-    height: 820px; */
-
     width: 400px;
-    height: 950px;
+    height: 870px;
 
 }
+
+
+
+
 
 /* gallery */
-#gallery {
-    background-color: rgb(32, 56, 74);
-}
-
 .row {
-    display: -ms-flexbox; /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 40px 0;
 }
 
-.img-select {
-    border: 1px solid rgb(32, 56, 74);
-}
-
-.img-select:hover {
-    border: 1px solid #fff;
-}
-
-#gallery h2 {
-    color: rgb(227, 197, 103);
-    margin-top: 40px;
-    text-align: center;
-}
-
-#gallery p {
-    color: rgb(227, 197, 103);
-    text-align: center;
-    padding-top: 10px;
-}
-
-/* videos */
-#audio h2, #videos h2 {
-    color: rgb(32, 56, 74);
-    margin-top: 40px;
-    text-align: center;
-}
-
-#videos h2 {
-    margin-bottom: 40px;
-}
-
-/* columns */
 .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+    flex: 25%;
+    max-width: 25%;
     padding: 0 4px;
+    box-sizing: border-box;
 }
 
 .column img {
@@ -344,56 +281,57 @@ footer p {
     width: 100%;
 }
 
+.img-select, .img-select:hover {
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+
+
+
+
+
+
+
+
+#gallery h2, #audio h2 {
+    margin: 40px 0 0 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+#gallery p {
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+/* videos */
+#videos h2 {
+    margin: 40px 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+
 #videos {
     text-align: center;
 }
 
 .video-styling {
     padding: 10px;
-    /* width: 280px;
-    height: 158px; */
-
     width: 500px;
     height: 281px;
 
 }
 
 #videos h3 {
-    color: rgb(32, 56, 74);
     padding: 0 0 30px 0;
     max-width: 500px;
     margin: auto;
 }
 
-
-/* #videos h3 {
-    color: rgb(32, 56, 74);
-    padding: 0 0 30px 0;
-    max-width: 280px;
-    margin: auto;
-} */
-
-
-
-
-
-/* larger screens */
-/* #bandcamp-widget-lg {
-    width: 400px;
-    height: 950px;
-} */
-
-/* .video-styling {
-    width: 500px;
-    height: 281px;
-} */
-
-/* #videos h3 {
-    color: rgb(32, 56, 74);
-    padding: 0 0 30px 0;
-    max-width: 500px;
-    margin: auto;
-} */
 
 
 /* ############################################  MEDIA QUERIES  ########################################################################### */
@@ -401,8 +339,7 @@ footer p {
 @media screen and (max-width: 899px)  {
 /* Header - logo-header and navbar */
     #logo-header {
-        border-bottom: 1px solid rgb(136, 136, 136); /*fallback for IE and EDGE*/
-        border-bottom: 1px solid var(--footer-color);
+        border-bottom: 1px solid rgb(136, 136, 136);
     }
 
     #logo-header, ul, li {
@@ -416,10 +353,8 @@ footer p {
     li a {
         padding: 8px 0;
         font-size: 14px;
-        background-color: rgb(221, 217, 187); /*fallback for IE and EDGE*/
-        background-color: var(--accent-color-3);
-        border-bottom: 1px solid rgb(136, 136, 136); /*fallback for IE and EDGE*/
-        border-bottom: 1px solid var(--footer-color);
+        background-color: rgb(221, 217, 187);
+        border-bottom: 1px solid rgb(136, 136, 136);
     }
 
     .container {
@@ -474,6 +409,24 @@ footer p {
         font-size: 24px;
     }
 
+/* media page - gallery */
+    .row {
+        padding: 10px;
+    }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    #gallery h2, #audio h2, #videos h2 {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 8px;
+    }
+
 }
 
 @media screen and (max-width: 768px)  {
@@ -498,6 +451,25 @@ footer p {
         padding: 2em;
         background-size: 240px;
     }
+
+/* media page - bandcamp widget */
+    #bandcamp-widget-lg {
+        width: 240px;
+        height: 740px;
+    }
+
+/* videos */
+    .video-styling {
+        width: 280px;
+        height: 158px;
+    }
+
+    #videos h3 {
+        font-size: 14px;
+    }
+
+
+    
 }
 
 @media screen and (max-width: 499px)  {
