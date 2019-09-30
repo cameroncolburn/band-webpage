@@ -1,0 +1,466 @@
+/* ############################## Colors ################################## */
+body {
+    background-color: rgb(243, 237, 199);
+}
+
+li a, #band, #middle-bio, #bottom-bio, .img-select, #audio h2, #videos h2, #videos h3 {
+    color: rgb(32, 56, 74);
+}
+
+#showcase, #top-bio, #show-page, #gallery {
+    background-color: rgb(32, 56, 74);
+}
+
+li a:hover, #top-bio, #gallery h2, #gallery p {
+    color: rgb(227, 197, 103); 
+}
+
+#band, #middle-bio, #audio {
+    background-color: rgb(227, 197, 103);
+}
+
+.current a, #dates h2 {
+    color: rgb(195, 59, 54);
+}
+
+#social, footer {
+    background-color: rgb(221, 221, 221);
+}
+
+footer {
+    color: rgb(136, 136, 136);
+}
+
+#show-page h2, .img-select:hover {
+    color: rgb(255, 255, 255);
+}
+/* ############################## end Colours ################################## */
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header - logo-header and navbar */
+header {
+    overflow: hidden;
+}
+
+#logo-header {
+    float: left;
+}
+
+#logo-header img {
+    display: block;
+    padding: 10px 20px;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+li a {
+    display: block;
+    padding: 27px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* showcase image section */
+#showcase img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* about the band */
+#band {
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.18rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding: 3.5em;
+    background-image: url("../img/mab-logo-lg.svg");
+    background-size: 270px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    position: relative;
+    bottom: 50px;
+}
+
+#section-header {
+    text-align: center;
+}
+
+#section-header img {
+    padding: 5px 0 0 0;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+#section-header h2 {
+    font-size: 1.5em;
+    margin: 0 0 32px 0;
+}
+
+#bandcamp-widget-sm {
+    border: 0;
+    width: 100%;
+}
+
+#music-container {
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+}
+
+/* upcoming shows */
+#dates h2 {
+    font-size: 36px;
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+
+.bit-widget-container {
+    padding-bottom: 80px;
+}
+
+/* social media */
+#social {
+    padding: 30px 0 10px 0;
+}
+
+#social h3 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icon-1 {
+    width: 50px;
+    padding: 10px;
+}
+
+.icon-2 {
+    width: 44px;
+    padding: 10px;
+}
+
+/* footer section */
+footer {
+    text-align: center;
+    font-size: 8px;
+}
+
+footer p {
+    font-size: 10px;
+    margin: 20px 0;
+}
+
+/* band page bios */
+#top-bio, #middle-bio, #bottom-bio {
+    padding: 50px 0;
+}
+
+.portrait-img, .landscape-img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+}
+
+.p-styling {
+    max-width: 800px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.bio-text-styling, .p-styling {
+    font-size: 19px;
+} 
+
+.h2-styling {
+    margin: 0;
+    font-size: 36px;
+}
+
+.h3-styling {
+    font-size: 22px;
+    margin: 0;
+    padding: 10px 0 30px 0;
+}
+
+.bio-text-styling {
+    line-height: 1.5;
+} 
+
+/* shows page */
+#show-page {
+    min-height: 100vh;
+}
+
+#show-page h2 {
+    padding: 80px 0;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+}
+
+/* media page */
+#bandcamp-widget-lg {
+    display: block;
+    padding: 40px 0;
+    margin: 0 auto;
+    border: 0;
+    width: 400px;
+    height: 870px;
+}
+
+/* gallery */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.img-select, .img-select:hover {
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+#gallery h2, #audio h2 {
+    margin: 40px 0 0 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+#gallery p {
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+/* videos */
+#videos h2 {
+    margin: 40px 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+#videos {
+    text-align: center;
+}
+
+.video-styling {
+    padding: 10px;
+    width: 500px;
+    height: 281px;
+}
+
+#videos h3 {
+    padding: 0 0 30px 0;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* ############################################  MEDIA QUERIES  ########################################################################### */
+
+@media screen and (max-width: 899px)  {
+/* Header - logo-header and navbar */
+    #logo-header {
+        border-bottom: 1px solid rgb(136, 136, 136);
+    }
+
+    #logo-header, ul, li {
+        float: none;
+    }
+
+    #logo-header img {
+        margin: 0 auto;
+    }
+
+    li a {
+        padding: 8px 0;
+        font-size: 14px;
+        background-color: rgb(221, 217, 187);
+        border-bottom: 1px solid rgb(136, 136, 136);
+    }
+
+    .container {
+        width: 100%;
+    }  
+    
+    #dates h2 {
+        font-size: 24px;
+    }
+
+/* about the band */
+    #section-header img {
+        width: 36px;
+        margin-bottom: 5px;
+    }
+
+    #band {
+        font-size: 1rem;
+    }
+
+/* band page bios */
+    #top-bio, #middle-bio, #bottom-bio {
+        padding: 30px 0;
+    }
+
+    .h2-styling {
+        font-size: 24px;
+    }
+
+    .h3-styling {
+        font-size: 18px;
+    }
+
+    .p-styling {
+        max-width: 550px; 
+        padding: 0 30px;
+    }
+    
+    .bio-text-styling {
+        font-size: 14px;
+    }
+
+    .portrait-img {
+        padding: 0 0 20px 0;
+    }
+    
+    .landscape-img {
+        padding: 0 0 20px 0;
+    }
+    
+/* show page */
+    #show-page h2 {
+        font-size: 24px;
+    }
+
+/* media page - gallery */
+    .row {
+        padding: 10px;
+    }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    #gallery h2, #audio h2, #videos h2 {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    #band {
+        width: 40%;
+        padding: 3em;
+        bottom: 30px;
+    }
+
+    .icon-1 {
+        width: 50px;
+    }
+    
+    .icon-2 {
+        width: 44px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #band {
+        width: 50%;
+        padding: 2em;
+        background-size: 240px;
+    }
+
+/* media page - bandcamp widget */
+    #bandcamp-widget-lg {
+        width: 240px;
+        height: 740px;
+    }
+
+/* videos */
+    .video-styling {
+        width: 280px;
+        height: 158px;
+    }
+
+    #videos h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 499px)  {
+
+    #logo-header img {
+        width: 250px;
+    }
+
+    #band {
+        font-size: 0.875rem;
+        bottom: 20px;
+    }
+
+    .icon-1 {
+        width: 40px;
+    }
+    
+    .icon-2 {
+        width: 34px;
+    }
+
+    #social h3 {
+        font-size: 16px;
+    }
+}
