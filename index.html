@@ -9,74 +9,108 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-    <meta name="description" content="This is the official website of the Mike Almas Band. Based in Hamilton, Ontario, Canada the Mike Almas Band is a rock and blues band with an extensive setlist of both covers and original music.">
+    <meta name="description"
+        content="This is the official website of the Mike Almas Band. Based in Hamilton, Ontario, Canada the Mike Almas Band is a rock and blues band with an extensive setlist of both covers and original music.">
 </head>
 
 <body>
-<!-- top header bar with nav and logo -->
-<header>
-    <div class="container">
-        <div id="logo-header">
-            <a href="./index.html">
-                <img src="./img/mab-logo.svg" alt="Mike Almas Band logo">
-            </a>
+    <!-- top header bar with nav and logo -->
+    <header>
+        <section class="header-flex-container">
+            <div id="logo-header">
+                <a href="./index.html">
+                    <img src="./img/mab-logo.svg" alt="Mike Almas Band logo" id="logo">
+                </a>
+            </div>
+            <nav>
+                <button class="burger-menu">
+                    <div id="topline"></div>
+                    <div id="middleline"></div>
+                    <div id="bottomline"></div>
+                </button>
+                <ul id="ul-selector">
+                    <li class="current"><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/band.html">Band</a></li>
+                    <li><a href="./pages/media.html">Media</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- showcase image section -->
+    <div class="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/mab-007.jpg" class="slideshow-img">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/mab-008.jpg" class="slideshow-img">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/mab-014.jpg" class="slideshow-img">
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li class="current"><a href="./index.html">Home</a></li>
-                <li><a href="./pages/band.html">Band</a></li>
-                <li><a href="./pages/shows.html">Shows</a></li>
-                <li><a href="./pages/media.html">Media</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<!-- showcase image section -->
-<section id="showcase">
-    <div class="container">
-        <img src="./img/mab-showcase.png" alt="Mike Almas Band banner photo">
-    </div>
-</section>
-
-<!-- about the band -->
-<p id="band">Based out of Hamilton, the <strong>Mike Almas Band</strong> has been setting venues throughout Southern Ontario ablaze with their unique blend of blues, rock and funk. A fun yet intense style has audiences cheering and dancing; always leaving them wanting more.</p>
-
-<!-- bandcamp player -->
-<div class="container">
-    <div id="music-container">
-        <iframe id="bandcamp-widget-sm" src="https://bandcamp.com/EmbeddedPlayer/album=1607006254/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://mikealmasband.bandcamp.com/album/i-cant-stop">I Can&#39;t Stop by Mike Almas</a></iframe>
-    </div>
-</div>
-
-<!-- upcoming shows -->
-<section id="dates">
-    <div class="container">
-        <h2>Upcoming Shows</h2>
-        <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="Mike Almas Band" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#20384a" data-link-color="#c33b36" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-link-text-color="#FFFFFF" data-display-lineup="false" data-display-play-my-city="false" data-separator-color="rgba(124,124,124,0.25)" data-display-track-button="false"></a>
-    </div>
-</section>
-
-<!-- social buttons -->
-<section id="social">
-    <div class="container">
-        <h3>Follow us on social media:</h3>
-        <div class="icons">
-            <a href="https://www.facebook.com/mikealmasband/" target="_blank"><img src="./icons/facebook-brands.svg" alt="facebook link" class="icon-1"></a>
-            <a href="https://mikealmasband.bandcamp.com" target="_blank"><img src="./icons/bandcamp-brands.svg" alt="bandcamp link" class="icon-1"></a>
-            <a href="https://www.youtube.com/channel/UCj2FN1tM525WVIEZQTRX-8A" target="_blank"><img src="./icons/youtube-square-brands.svg" alt="youtube link" class="icon-2"></a>
+        <div class="line-container">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
         </div>
     </div>
-</section>
 
-<!-- footer section -->
+    <!-- about the band -->
+    <div class="about-flex-container">
+        <div class="about-container">
+            <h2>About the Band</h2>
+            <p id="band">Based out of Hamilton, the <strong>Mike Almas Band</strong> has been setting venues throughout
+                Southern
+                Ontario ablaze with their unique blend of blues, rock and funk. A fun yet intense style has audiences
+                cheering
+                and dancing; always leaving them wanting more.</p>
+        </div>
+        <div class="event-container">
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmikealmasband%2F&tabs=events&width=340&height=244&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                width="340" height="244" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <!-- bandcamp player -->
+    <div class="container-dark">
+        <div id="music-container">
+            <iframe id="bandcamp-widget-sm"
+                src="https://bandcamp.com/EmbeddedPlayer/album=1607006254/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/artwork=small/transparent=true/"
+                seamless><a href="http://mikealmasband.bandcamp.com/album/i-cant-stop">I Can&#39;t Stop by Mike
+                    Almas</a></iframe>
+        </div>
+    </div>
+
+    <!-- social buttons -->
+    <section id="social">
+        <div class="container">
+            <h3 class="social-title">Follow us on social media:</h3>
+            <div class="icons">
+                <a href="https://www.facebook.com/mikealmasband/" target="_blank"><img src="./icons/facebook.png"
+                        alt="facebook link" class="icon-png"></a>
+                <a href="https://mikealmasband.bandcamp.com" target="_blank"><img src="./icons/bandcamp.png"
+                        alt="bandcamp link" class="icon-png"></a>
+                <a href="https://www.youtube.com/channel/UCj2FN1tM525WVIEZQTRX-8A" target="_blank"><img
+                        src="./icons/youtube.png" alt="youtube link" class="icon-png"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
     <footer>
         <div class="container">
             <div id="footer-container">
-                <p>Copyright &copy; 2019 All Rights Reserved. Photos by Vern White. Website by Cameron Colburn.</p>
+                <p>Copyright &copy; 2021 All Rights Reserved. Photos by Vern White. Website by Cameron Colburn.</p>
             </div>
         </div>
     </footer>
- 
+    <script src="js/mainFunctions.js"></script>
+    <script>showSlides();</script>
 </body>
+
 </html>
