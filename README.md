@@ -1,22 +1,20 @@
 # Band Webpage
-Responsive musician website for the **Mike Almas Band**.
+Responsive musician website for the **Mike Almas Band**. The home page features a javascript carousel with multiple social media integrations. The media page features a flexbox based photo gallery with music and video streaming integrations.
 
 ### Languages:
 
-* HTML
-* CSS
+* HTML/CSS
+* Javascript
+
+### Key Features:
+* Javascript image carousel
+* Flexbox photo gallery
+* Facebook, Youtube, and Bandcamp social media integrations
 
 ##### Desktop View:
-<img src="github/desktop-view-1.png" alt="Desktop view image">
+<img src="github/desktop-view.png" alt="Desktop view image" width="500px">
 
 ##### Mobile View:
-<img src="github/mobile-view-2.png" alt="Mobile view image" width="375px">
+<img src="github/mobile-view.png" alt="Mobile view image" width="250px">
 
-### Features:
-* Photo gallery layout using flexbox
-* Bandcamp embedded music player integration
-* Bandsintown event widget integration
-
-
-
-#### Link to website [Band Webpage](https://fervent-pasteur-e06413.netlify.app)
+#### Link to website: [mikealmasband.live](https://www.mikealmasband.live)
