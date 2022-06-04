@@ -17,4 +17,4 @@ Responsive musician website for the **Mike Almas Band**. The home page features 
 ##### Mobile View:
 <img src="github/mobile-view.png" alt="Mobile view image" width="250px">
 
-#### Link to website: [mikealmasband.live](https://www.mikealmasband.live)
+#### Link to website: [View the Website](https://fervent-pasteur-e06413.netlify.app/)
